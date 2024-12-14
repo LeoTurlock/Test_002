@@ -1,0 +1,103 @@
+:root {
+    --view-top-padding: 20px;
+    --nav-color: #2069bd;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SF-Pro-Display-Regular.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SFProDisplay';
+}
+
+nav > .topnav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--nav-color);
+    color: #ffffff;
+    height: 60px;
+    padding: 0 20px;
+    box-shadow: #2069bd 1px 2px 0 0 ;
+}
+
+nav .navList a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    float: right;
+}
+
+.hamburger hr {
+    margin: 5px 0;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    border: none;border-radius: 3px;
+}
+
+.navSideBar {
+    display: flex;
+    flex-direction: row;
+
+    transform: translateX(-100%);
+    position: absolute;
+    top: 60px;
+    height: calc(100vh - 60px);
+    width: 250px;
+    background-color: var(--nav-color);
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.showSideBar {
+    transform: translateX(0);
+}
+
+
+
+.navList {
+    margin-left: 30px;
+}
+
+.view {
+    display: flex;
+    flex-direction: column;
+    padding: var(--view-top-padding) 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .view {
+        padding: 10px 10px;
+    }
+
+    .showSideBar {
+        transform: translateX(0);
+    }
+
+    nav > .topnav > .navList a {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navSideBar {
+        transform: translateX(-100%);
+    }
+}

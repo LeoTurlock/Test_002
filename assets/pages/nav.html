@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="../../stylesheet.css">
+
+
+<div class="topnav">
+    <div class="title">
+        <h1>Granögård Samfällighetsförening</h1>
+    </div>
+    <div class="navList">
+
+
+        <div class="hamburger" onclick="hamburgerCross()">
+            <hr id="first">
+            <hr id="middle">
+            <hr id="last">
+        </div>
+    </div>
+</div>
+
+<div class="navSideBar">
+
+</div>
+
+<style>
+    .hamburger hr {
+        transition: all 0.3s ease;
+    }
+    .cross #first {
+        transform: rotate(45deg) translate(5.5px, 5.5px);
+    }
+    .cross #middle {
+        transform: scaleX(0);
+    }
+    .cross #last {
+        transform: rotate(-45deg) translate(5.5px, -5.5px);
+    }
+</style>
+
+<script>
+    function hamburgerCross() {
+        document.querySelector('.hamburger').classList.toggle('cross');
+        document.querySelector('.navSideBar').classList.toggle('showSideBar');
+    }
+</script>
