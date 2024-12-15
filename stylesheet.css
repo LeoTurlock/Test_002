@@ -23,13 +23,18 @@ nav > .topnav {
     color: #ffffff;
     height: 60px;
     padding: 0 20px;
-    box-shadow: #2069bd 1px 2px 0 0 ;
+    box-shadow: var(--nav-color) 1px 2px 0 0 ;
 }
 
-nav .navList a {
+nav .topnavList a {
     color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
+}
+
+.topnavList {
+    margin-left: 30px;
+    flex-direction: row;
 }
 
 .hamburger {
@@ -67,11 +72,6 @@ nav .navList a {
 }
 
 
-
-.navList {
-    margin-left: 30px;
-}
-
 .view {
     display: flex;
     flex-direction: column;
@@ -79,6 +79,10 @@ nav .navList a {
 }
 
 @media screen and (max-width: 768px) {
+    nav > .topnav {
+        padding: 0 10px;
+    }
+
     .view {
         padding: 10px 10px;
     }
@@ -87,7 +91,7 @@ nav .navList a {
         transform: translateX(0);
     }
 
-    nav > .topnav > .navList a {
+    nav > .topnav > .topnavList a {
         display: none;
     }
 
