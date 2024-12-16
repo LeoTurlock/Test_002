@@ -106,8 +106,7 @@ footer {
     nav > .topnav > .navList a {
         display: none;
     }
-
-    .topnav {
+    
     nav > .topnav {
         padding: 0 10px;
     }
