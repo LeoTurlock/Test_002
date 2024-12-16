@@ -8,11 +8,17 @@
     src: url('./assets/fonts/SF-Pro-Display-Regular.otf');
 }
 
+span > .top-margin { height: 60px; width: 100%;}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'SFProDisplay';
+}
+
+nav {
+    position: fixed;
 }
 
 nav > .topnav {
@@ -23,7 +29,20 @@ nav > .topnav {
     color: #ffffff;
     height: 60px;
     padding: 0 20px;
-    box-shadow: #2069bd 1px 2px 0 0 ;
+    box-shadow: #000 0 0 15px 0;
+
+    z-index: 99999;
+}
+
+.title {
+    color: #ffffff;
+}
+
+.social-media > a > img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 nav .navList a {
@@ -53,7 +72,7 @@ nav .navList a {
     flex-direction: row;
 
     transform: translateX(-100%);
-    position: absolute;
+    position: fixed;
     top: 60px;
     height: calc(100vh - 60px);
     width: 250px;
@@ -78,17 +97,27 @@ nav .navList a {
     padding: var(--view-top-padding) 20px;
 }
 
+footer {
+    background-color: var(--nav-color);
+    padding: 20px 20px;
+}
+
 @media screen and (max-width: 768px) {
+    nav > .topnav > .navList a {
+        display: none;
+    }
+
+    .topnav {
+        padding: 0 10px;
+    }
+
     .view {
         padding: 10px 10px;
     }
 
     .showSideBar {
         transform: translateX(0);
-    }
-
-    nav > .topnav > .navList a {
-        display: none;
+        box-shadow: #000000 0 0 15px 0;
     }
 
     .hamburger {
