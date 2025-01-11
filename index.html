@@ -5,28 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="./index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/scripts/onLoad.js"></script>
 </head>
 <body>
     <nav></nav>
-    <span class="top-margin">a</span>
+    <div class="top-margin"></div>
     <div class="view">
-        <h1>Home</h1>
-        <p>Welcome to the home page</p>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h1>Helo Helo Helo</h1>
+        <h1 class="page-title">Hem</h1>
+        <div class="start-div">
+            <div class="aktuellInfo">
+                <h3>Aktuell Information:</h3>
+
+                <h5 class="info-lank">
+                    <a href="../assets/info/pdf/info_instagram.pdf" target="_blank">Instagramkonto skapat!</a>
+                </h5>
+                <h5 class="info-lank">
+                    <a href="https://www.svk.se/om-kraftsystemet/kontrollrummet/" target="_blank">Följ eltillgången i Sverige</a>
+                </h5>
+                <h5 class="info-lank">
+                    <a href="../assets/bilder/pdf/mingel/adventsmingel_2022.pdf" target="_blank">Bilder från Adventsmingel 17 december 2022</a>
+                </h5>
+                <h5>
+                    <span class="underline">Vildsvinen och kommunens svar:</span> Vad att tänka på inför sophämtning. Se kommunens info på <span class="info-lank"><a target="_blank" href="https://www.nvaa.se/informationssidor/Avfall-och-atervinning/sophamtning/infor-sophamtning/">nvaa.se</a></span>.
+                </h5>
+            </div>
+
+            <hr>
+
+            <div class="allmanInfo">
+                <h3>Allmän Information:</h3>
+
+                <h5>
+                    <span class="info-lank"><a target="_blank" href="../assets/info/pdf/turlista_buss_636.pdf">Turlista</a></span> Buss 636
+                </h5>
+                <h5>
+                    Postnummer: 764 92, Väddö
+                </h5>
+                <h5>
+                    <a class="info-lank" href="">Skjutning</a> på <a class="info-lank" href="">Väddö skjutfält</a>
+                </h5>
+                <h5>
+                    Rabattkoden och mycket mer finns att läsa i <a class="info-lank" href="../assets/info/pdf/vipagrano2020.pdf" target="_blank">Vi på Granö 2020</a>
+                </h5>
+            </div>
+
+            <hr>   
+
+            <div class="vader">
+                <h3>Väder:</h3>
+                <h5>Väderleksrapport finns även på <a class="info-lank" href="https://www.smhi.se/q/Gran%C3%B6/Norrt%C3%A4lje/2711143#ort=2665943,V%C3%A4dd%C3%B6,Norrt%C3%A4lje,Sverige,59.983334/18.816668" target="_blank">SMHI.se</a></h5> 
+                <br>
+                <div id="vader">
+                    <iframe 
+                        src="https://www.klart.se/widget/get_widget/983fad70e48c5d2e0a9bb7e6a33ac080/" 
+                        frameborder="0" 
+                        width="150px" 
+                        height="100%"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
     </div>
     <footer></footer>
 </body>

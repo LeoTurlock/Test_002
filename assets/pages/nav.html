@@ -1,33 +1,48 @@
 <script src="./assets/scripts/navItems.js"></script>
 
 <div class="topnav">
-    <div class="title">
+    <div class="nav-title">
         <h1>Granögård Samfällighetsförening</h1>
+
     </div>
-    <div class="topnavList">
+
+    <div class="navItems">
         
         <a href="./index.html">
-            <img src="" alt="">
-            <p>Home</p>
+            <img src="./assets/icons/nav-items/house_fill.png" alt="">
+            <p>Hem</p>
         </a>
-        <a href="./about.html">
-            <img src="" alt="">
-            <p>About</p>
+        <a href="./kalender.html">
+            <img src="./assets/icons/nav-items/calendar.png" alt="">
+            <p>Kalender</p>
         </a>
-        <a href="./contact.html">
-            <img src="" alt="">
-            <p>Contact</p>
+        <a href="./">
+            <img src="./assets/icons/nav-items/pin_fill.png" alt="">
+            <p>Anslagstavla</p>
+        </a>
+        <a href="./kontakt.html">
+            <img src="./assets/icons/nav-items/phone_fill.png" alt="">
+            <p>Kontaktlista</p>
+        </a>
+        <a href="./">
+            <img src="./assets/icons/nav-items/.png" alt="">
+            <p></p>
+        </a>
+        <a href="./">
+            <img src="./assets/icons/nav-items/.png" alt="">
+            <p></p>
         </a>
 
         <div class="hamburger" onclick="hamburgerCross()">
             <hr id="first">
             <hr id="middle">
-            <hr id="last">
+            <hr id="last"> 
         </div>
+
     </div>
 </div>
 
-<div class="navSideBar">
+<div class="sidenav">
 
 </div>
 
@@ -49,6 +64,6 @@
 <script>
     function hamburgerCross() {
         document.querySelector('.hamburger').classList.toggle('cross');
-        document.querySelector('.navSideBar').classList.toggle('showSideBar');
+        document.querySelector('.sidenav').classList.toggle('showSideBar');
     }
 </script>

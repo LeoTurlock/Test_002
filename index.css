@@ -1,0 +1,33 @@
+.start-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.start-div > hr {
+    margin: 0 10px;
+}
+
+.start-div > div > h5 {
+    margin-bottom: 10px;    
+}
+
+.info-lank > a {
+    text-decoration: underline;
+    color: #4183C4;
+}
+
+.info-lank {
+    text-decoration: underline;
+    color: #4183C4;
+}
+
+@media screen and (max-width: 1100px) {
+    .start-div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .start-div > hr {
+        margin: 10px 0;
+    }
+}
